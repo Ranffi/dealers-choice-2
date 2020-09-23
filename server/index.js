@@ -1,6 +1,7 @@
 const express = require("express")
 //initialize app
 const app = express()
+app.use(require('express').json());
 //require morgan|volleyball, path packages
 const morgan = require('morgan')
 const path = require('path')

@@ -12,9 +12,8 @@ const jobs = []
 while(jobs.length < 30) {
     jobs.push(Job.create({
         title : faker.name.jobTitle(),
-        logo : faker.image.business(),
         company : faker.company.companyName(),
-        description : faker.name.jobDescriptor()
+        description : faker.lorem.paragraphs()
     }))
 }
 

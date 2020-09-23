@@ -27,6 +27,7 @@ router.delete('/jobs/:id', async(req, res, next) => {
     try{
         const job = await Job.findByPk(req.params.id)
         job.destroy()
+        res.sendStatus(204)
     }
     catch(err){
         next(err)
@@ -36,7 +37,7 @@ router.delete('/jobs/:id', async(req, res, next) => {
 router.post('/jobs', async(req, res, next) => {
     try{
         const job = await Job.create(req.body)
-        await job.destroy()
+        res.status(201).send(job);
     }
     catch(err){
         next(err)

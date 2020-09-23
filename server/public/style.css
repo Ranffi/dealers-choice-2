@@ -1,0 +1,12 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 2;
+    margin: 1em;
+  }
+
+.medium-btn {
+  width: 70px;
+  height: 30px;
+}

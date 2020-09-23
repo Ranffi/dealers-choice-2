@@ -8,15 +8,12 @@ const Job = db.define('job', {
         type : Sequelize.STRING,
         allowNull : false
     },
-    logo : {
-        type : Sequelize.STRING,
-    },
     company : {
         type : Sequelize.STRING,
         allowNull : false
     },
     description : {
-        type : Sequelize.STRING,
+        type : Sequelize.TEXT,
         allowNull : false
     }
 
